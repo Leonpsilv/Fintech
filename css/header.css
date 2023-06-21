@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #375685;
+    padding: 10px;
+}
+
+.horizontal-logo {
+    width: 186px;
+}
+
+#menu-nav-icon{
+    width: 30px;
+    height: 30px;
+}
+
+#user-nav-icon{
+    width: 30px;
+    height: 28px;
+}
+
+.dropdown-toggle::after{
+    display: none;
+}
+
+@media screen and (min-width: 774px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .dropdown-toggle::after{
+        display: inline-block;
+    }
+
+    .horizontal-logo{
+        max-width: 300px;
+    }
+
+    .nav-link {
+        color: white;
+        font-size: 18px;
+    }
+}

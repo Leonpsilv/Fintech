@@ -1,0 +1,28 @@
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile {
+    display: flex;
+}
+
+@media screen and (min-width: 774px) {
+    .mobile {
+        display: none;
+    }
+    
+    .desktop{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+    }
+}
