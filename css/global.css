@@ -3,26 +3,33 @@
     font-size: 14px;
 }
 
-img {
-    cursor: pointer;
+html, body {
+    height: 100%;
+    margin: 0;
 }
 
-.desktop{
-    display: none;
+img {
+    cursor: pointer;
 }
 
 .mobile {
     display: flex;
 }
 
-@media screen and (min-width: 774px) {
+@media screen and (min-width: 775px) {
     .mobile {
-        display: none;
+        display: none !important;
     }
     
     .desktop{
         display: flex;
         align-items: center;
         width: fit-content;
+    }
+}
+
+@media screen and (max-width: 774px) {
+    .desktop{
+        display: none !important;
     }
 }
